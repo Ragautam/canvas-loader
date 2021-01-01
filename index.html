@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Loader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas></canvas>
+    <div class="container">
+        <div>
+            X - Speed: <input id="xSpeed" onchange="onXSpeedChange(this.value)" type="range" min="0" max="10" value="10" step="0.5">
+        </div>
+        <div>
+            Y - Speed: <input id="ySpeed" onchange="onYSpeedChange(this.value)" type="range" min="0" max="10" value="10" step="0.5">
+        </div>
+        <div>
+            Clockwise: <input id="clockWise" onchange="onClockWiseChange(this.value)" type="range" min="0" max="1" value="0" step="1">
+        </div>
+        <div>
+            Reverse: <input id="reverse" onchange="onReverseChange(this.value)" type="range" min="0" max="1" value="0" step="1">
+        </div>
+    </div>
+    <script src="loader.js"></script>
+</body>
+</html>

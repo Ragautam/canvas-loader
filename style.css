@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container div {
+    height: 40px;
+}
+
+.container input {
+    height: 8px;
+}
+
+#clockWise, #reverse {
+    width: 30px;
+}
