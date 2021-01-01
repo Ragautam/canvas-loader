@@ -13,9 +13,9 @@ const center = {
 }
 
 let angle = 0;
-let xSpeed = 10;
-let ySpeed = 10;
-let reverse = 0;
+let xSpeed = 1;
+let ySpeed = 1;
+let reverse = 1;
 let clockWise = 0;
 
 const colors = ["#D2F6FC", "#7984EE", "#F9E3A2", "#23374D", "#DB1D4B"];
@@ -29,7 +29,7 @@ function Particle(radius, color) {
 
 function animate() {
   requestAnimationFrame(animate);
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
   ctx.fillRect(0,0, canvas.width,  canvas.height);
   for(let i = 0; i < particles.length; i++) {
     const particle = particles[i];
